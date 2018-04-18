@@ -1,0 +1,35 @@
+{
+  "private": true,
+  "scripts": {
+      "coverage" : "jest --coverage"
+  },
+  "dependencies": {},
+  "jest": {
+    "rootDir": "./",
+    "roots": [
+      "<rootDir>/../src/"
+    ],
+    "transform": {
+      "^.+\\.js$": "<rootDir>/jest/jsTransform.js",
+      "^.+\\.s?css$": "<rootDir>/jest/cssTransform.js",
+      "^(?!.*\\.(js|jsx|css|json)$)": "<rootDir>/jest/fileTransform.js"
+    },
+    "modulePaths": [
+      "<rootDir>/node_modules"
+    ],
+    "collectCoverageFrom" : [
+        "<rootDir>/../src/*.js"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "7.0.0-beta.40",
+    "@babel/plugin-transform-modules-commonjs": "7.0.0-beta.40",
+    "@babel/preset-env": "7.0.0-beta.40",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "22.4.0",
+    "babel-loader": "8.0.0-beta.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "6.26.0",
+    "jest": "22.4.0",
+    "jsdom": "11.6.2"
+  }
+}
