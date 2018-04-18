@@ -5,21 +5,11 @@
   },
   "dependencies": {},
   "jest": {
-    "rootDir": "./",
-    "roots": [
-      "<rootDir>/../src/"
-    ],
     "transform": {
       "^.+\\.js$": "<rootDir>/jest/jsTransform.js",
       "^.+\\.s?css$": "<rootDir>/jest/cssTransform.js",
       "^(?!.*\\.(js|jsx|css|json)$)": "<rootDir>/jest/fileTransform.js"
-    },
-    "modulePaths": [
-      "<rootDir>/node_modules"
-    ],
-    "collectCoverageFrom" : [
-        "<rootDir>/../src/*.js"
-    ]
+    }
   },
   "devDependencies": {
     "@babel/core": "7.0.0-beta.40",
